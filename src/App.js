@@ -1,4 +1,4 @@
-import './App.css';
+import './stylesheets/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBarComp from './components/NavBarComp';
 

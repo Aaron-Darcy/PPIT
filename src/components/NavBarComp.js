@@ -10,6 +10,7 @@ import {
 
 //routing import
 import BMI from './BMI';
+import BMR from './BMR';
 import Nutrition from './Nutrition';
 
 export default class NavBarComp extends Component {
@@ -26,6 +27,7 @@ export default class NavBarComp extends Component {
               <Nav className="me-auto">
                 <Nav.Link as={Link} to={"/Nutrition"}>Nutrition</Nav.Link>
                 <Nav.Link as={Link} to={"/bmi"}>BMI Calculator</Nav.Link>
+                <Nav.Link as={Link} to={"/BMR"}>Calorie Calculator</Nav.Link>
                 <NavDropdown title="Workouts" id="collasible-nav-dropdown">
                   <NavDropdown.Item as={Link} to={"/cardio"}>Cardio</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to={"/ppl"}>Push/Pull/Legs</NavDropdown.Item>
@@ -47,6 +49,7 @@ export default class NavBarComp extends Component {
         <Routes>
           <Route path="/Nutrition" element={<Nutrition />}/>
           <Route path="/BMI" element={<BMI />}/>
+          <Route path="/BMR" element={<BMR />}/>
         </Routes>
         </div>
       </Router>

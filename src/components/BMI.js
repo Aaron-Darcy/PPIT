@@ -1,5 +1,5 @@
 import React, { Component,useState} from 'react'
-import '../index.css'
+import '../stylesheets/bmi.css'
 
 function BMI() {
         // variables
@@ -35,27 +35,29 @@ function BMI() {
           }
 
     return (
-    <div className='bmiContainer'>
-        <h2 className='center'>BMI Calculator</h2>
-        <form onSubmit={calcBmi}>
-          <div>
-            <label>Weight (kg)</label>
-            <input value={weight} onChange={(e) => setWeight(e.target.value)} />
-          </div>
-          <div>
-            <label>Height (cm)</label>
-            <input value={height} onChange={(event) => setHeight(event.target.value)} />
-          </div>
-          <div>
-            <button className='btn' type='submit'>Submit</button>
-             <button className='btn btn-outline' onClick={reload} type='submit'>Reload</button>
-          </div>
-        </form>
+    <div className='bmiComponent'>
+      <div className='bmiContainer'>
+          <h2 className='center'>BMI Calculator</h2>
+          <form onSubmit={calcBmi}>
+            <div>
+              <label>Weight (kg)</label>
+              <input className='bmi-input' value={weight} onChange={(e) => setWeight(e.target.value)} />
+            </div>
+            <div>
+              <label>Height (cm)</label>
+              <input className='bmi-input'  value={height} onChange={(event) => setHeight(event.target.value)} />
+            </div>
+            <div>
+              <button className='btn' type='submit'>Submit</button>
+              <button className='btn btn-outline' onClick={reload} type='submit'>Reload</button>
+            </div>
+          </form>
 
-        <div className='center'>
-          <h3>Your BMI is: {bmi}</h3>
-          <p>{message}</p>
-        </div>
+          <div className='center'>
+            <h3>Your BMI is: {bmi}</h3>
+            <p>{message}</p>
+          </div>
+      </div>
     </div>
     )
 }
