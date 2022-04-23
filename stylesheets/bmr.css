@@ -1,0 +1,107 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: #f4f1f1;
+  color: black;
+  font-size: 15px;
+}
+
+div#bmrcalc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 12px #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    
+}
+.form {
+  width: 600px;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ffc5c5;
+  box-shadow: 0 1px 9px #cdb3b3;
+  border-radius: 5px;
+  max-width: 100%;
+}
+h2 {
+  margin: 0px;
+  text-align: center;
+  font-size: 21px;
+  margin-bottom: 16px;
+}
+
+.inputwrap {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.inputwrap label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.bmr-input[type="text"],
+.bmr-input[type="number"] {
+  padding: 8px 7px;
+  width: 110px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.bmr-input[type="text"] {
+  width: 100%;
+}
+
+.bmr-input[type="submit"] {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 8px 4px;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+button {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 8px 0;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+}
+select {
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 15px;
+}
+.error {
+  background: #bf2121;
+  color: white;
+  text-align: center;
+  padding: 4px 16px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.result {
+  background: red;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 9px;
+  font-size: 18px;
+}
+.workout {
+  margin-top: 19px;
+}
+
+@media only screen and (max-width: 500px) {
+  div#bmrcalc {
+    align-items: end;
+  }
+}

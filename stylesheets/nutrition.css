@@ -1,0 +1,16 @@
+ 
+  .Nutrition-text{
+    text-align: left;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: smaller;
+  }
+
+  .fruit-image{
+    float: right;
+    display: block;
+    height: 200px;
+    border:2px solid #333;
+    margin-right: 2px;
+  }
+  
