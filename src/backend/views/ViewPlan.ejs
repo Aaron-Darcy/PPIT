@@ -1,0 +1,52 @@
+<body>
+<style>
+     table{
+        background-color: white;
+    }
+    tb,
+    td {
+        border: 1px solid black;
+    }
+    body{
+        background-color:maroon ;
+    }
+    h3{
+        color: white;
+    }
+</style>
+<h3>My Workout Plan</h3>
+</form>
+
+<table>
+    <tr>
+        <th>Bodytype</th>
+        <th>BodyPart</th>
+        <th>exercise</th>
+        <th>reps</th>
+        <th>sets</th>
+        <th>equipment</th>
+        <th>picture</th>
+    </tr>
+
+    <% workout.forEach((workout)=> { %>
+        <tr>
+            <%=workout.IDno%> 
+        </tr>
+        <% }) %>
+    <% workout.forEach((workout)=> { %>
+        <tr>
+            <td><%= workout.My_bodyType%> </td>
+            <td><%= workout.My_BodyPart%> </td>
+            <td><%= workout.My_exercise%> </td>
+            <td><%= workout.My_reps%> </td>
+            <td><%= workout.My_sets%> </td>
+            <td><%= workout.My_equipment%> </td>
+            <td><img src="<%= workout.pic%>" width=100, height=100></td>
+            <td><a href="/deletePlan/<%=workout.My_exercise%>/<%=workout.IDno%>" >drop workout</a></td>
+        </tr>
+        <% }) %>
+</table>
+<form action="/UserMenu">
+    <button>return to menu</button>
+    </form>
+</body>

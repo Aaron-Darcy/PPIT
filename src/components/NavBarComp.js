@@ -35,10 +35,8 @@ export default class NavBarComp extends Component {
                 </NavDropdown>
               </Nav>
               <Nav>
-                <Nav.Link as={Link} to={"/LogIn"}>Log In</Nav.Link>
-                <Nav.Link eventKey={2} as={Link} to={"/SignUp"}>
-                  Sign Up
-                </Nav.Link>
+              <Nav.Link href="http://localhost:3001/Login">Login</Nav.Link>
+                <Nav.Link href="http://localhost:3001/CreateUser">Register</Nav.Link>
               </Nav>
             </Navbar.Collapse>
             </Container>
