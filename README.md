@@ -7,7 +7,7 @@
 * explained solution architecture with diagrams
 * created user stories
 
-#Aaron's Work
+### Aaron's Work
 * created Front using react FrameWork
 * Set up NavBar Component with routing to other front end components
 * Created BMI Calculator component
